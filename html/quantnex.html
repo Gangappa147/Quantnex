@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #fff; /* White text for contrast */
+        }
+
+        /* Center the heading */
+        h1 {
+            color: #fff;
+            margin-top: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        /* Styling for the course container */
+        div {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+
+        /* Styling for the course links */
+        a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            max-width: 220px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            margin-bottom: 20px;
+            color: #333; /* Text color of the course links */
+        }
+
+        /* Styling for images inside the course links */
+        a img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Hover effect for course links */
+        a:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+            background-color: #f0f0f0;
+            color: #e71d1d; /* Text color on hover */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            div {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            a img {
+                width: 120px;
+                height: 120px;
+            }
+
+            h1 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Additional Hover Effects on text for better UX */
+        a:hover span {
+            color: #f16060; /* Change text color on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <h1 align="center">Courses Offered</h1>
+    <div align="center">
+       <a href="/java Fullsatck.html">
+           <img src="https://quntnex.com/wp-content/uploads/2024/04/java-icon.png" alt="Java Fullstack">
+           <span>Java Fullstack</span>
+       </a>
+       <a href="/Python Fullsatck.html">
+           <img src="https://quntnex.com/wp-content/uploads/2024/04/python-icon.png" alt="Python Fullstack">
+           <span>Python Fullstack</span>
+       </a>
+       <a href="/Software Testing.html">
+           <img src="https://quntnex.com/wp-content/uploads/2024/04/software-testing-icon.png" alt="Software Testing">
+           <span>Software Testing</span>
+       </a>
+    </div>
+</body>
+</html>

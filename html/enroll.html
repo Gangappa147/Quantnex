@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;  /* Light background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        /* Styling the title */
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        /* Form container styling */
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Styling for text input fields */
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        /* Placeholder text styling */
+        input::placeholder {
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* Styling for select dropdown */
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        /* Button hover effect */
+        input[type="submit"]:hover {
+            background-color: #d81c1c;
+        }
+
+        /* Responsive design for small screens */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            form {
+                padding: 20px;
+            }
+
+            input[type="text"], select, input[type="submit"] {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Enroll for Course</h1>
+    <form>
+        <input type="text" name="FullName" placeholder="Full Name">
+        <input type="text" name="PhoneNumber" placeholder="Phone Number">
+        <input type="text" name="EmailAddress" placeholder="Email Address">
+        <input type="text" name="City" placeholder="City">
+        <select name="stream">
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>CSCF</option>
+            <option>AIML</option>
+        </select><br>
+        <input type="text" name="YearOfPassout" placeholder="Year of Passout">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
